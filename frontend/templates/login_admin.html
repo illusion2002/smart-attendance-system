@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facial Recognition System Login</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNje6_l1w5eQT1KGoKqvOaxSeIMVBSd1Zung&usqp=CAU" type="image/x-icon">
+</head>
+
+<body>
+    <div class="lame"></div>
+    <div class="main">
+        <div class="heading"  onclick="location.href='main.html'">
+            <h1><span>Admin</span>  Login</h1>
+        </div>
+        <div class="page">
+            <h1><span>Log In</span></h1>
+            <div class="form">
+                <form>           
+                <input type="email" id="email" placeholder="Enter your email" required list="emailSuggestions">
+
+                <div class="psword">
+                <input type="password" placeholder="Enter your password" id="psw" required>
+<img src="../Image/eyesaway.png" alt="Show Password" width="25" height="25" class="img1">
+<img src="../Image/eyeslook.png" alt="Show Password" width="25" height="25" class="img2">
+            </div>
+
+
+
+      <div class="logF">
+        <button type="button"  onclick="login()">Log In</button>
+        <p><span  onclick='location.href="forPaas.html"'>Forgot Password ?</span></p>
+    </div> 
+    
+    
+    <div class="signU">
+        <button type="button" onclick="location.href='sign_up.html'">Sign Up</button>
+    </div>
+    </form>
+            </div>
+        </div>
+    </div>
+    <script src="../script/shwpswd.js"></script>
+    <!-- <script src="../script/forPaas.js"></script> -->
+    <script src="../script/login_admin.js"></script>
+
+    
+</body>
+</html>

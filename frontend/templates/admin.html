@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interface</title>
+    <link rel="shortcut icon" href="../image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/next.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    
+</head>
+<body>
+    <div class="main">
+        <div class="heading" >
+            <h1><span>Facial</span> Recognition System : Admin</h1>
+        </div>
+        <div class="grid">
+            <div class="g1">  
+
+            <div class="box_1"  onclick="executeScriptq()">
+                <img src="../image/database.png" alt="Database" height="50" width="50">
+                <h2>Student Details</h2>
+            </div>
+
+
+            <div class="box_2" onclick="executeScriptw()">
+                <img src="../image/train.png" alt="Database" height="50" width="50">
+                <h2>Train</h2>
+            </div>
+
+
+            
+        </div>
+<div class="g2">
+   
+
+    <div class="box_3">
+        <img src="../image/dev.png" alt="Database" height="50" width="50">
+        <h2>Developer</h2>
+    </div>
+
+  
+</div>
+        </div>
+    </div>
+    
+</body>
+
+<script>
+    async function executeScriptq() {
+        console.log('asds')
+        await axios.get('http://127.0.0.1:5000/admin/run_scriptq')
+            .then(function (response) {
+                alert(response.data);
+            })
+            .catch(function (error) {
+                console.error('Error:', error);
+            });
+    }
+
+
+    async function executeScriptw() {
+        console.log('asds')
+        await axios.get('http://127.0.0.1:5000/admin/run_scriptw')
+            .then(function (response) {
+                alert(response.data);
+            })
+            .catch(function (error) {
+                console.error('Error:', error);
+            });
+    }
+
+
+
+   
+</script>
+</html>

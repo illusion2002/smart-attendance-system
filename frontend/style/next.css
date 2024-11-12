@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Gruppo&family=Kalnia:wght@200&family=Khula:wght@700&family=Lora&family=Mandali&family=Roboto&display=swap');
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', 'Courier New', Courier, monospace;
+}
+
+body {
+    overflow: hidden;
+    background: url('../Image/AIT.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: contrast(5rem) brightness(20px) saturate(2rem);
+
+}
+
+.main {
+    /* overflow: hidden; */
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.heading {
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #bd83b6;
+    color: wheat;
+}
+
+span {
+    font-weight: 800;
+    color: #75b8d9;
+
+}
+
+h2 {
+    color: wheat;
+}
+
+span:hover {
+    color: #072e33;
+    /* transform: scale(2); */
+    transition: .1s ease-in-out;
+}
+
+
+.grid {
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.grid .g1 div {
+    border: 2px solid white;
+    background: transparent;
+    margin: 1.2rem 5rem;
+    height: auto;
+    max-width: 20vw;
+    padding: auto;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: 500;
+    box-shadow: 2px 1px 4rem #3a7a9d;
+    cursor: pointer;
+}
+
+
+.fa-regular {
+    height: 20vh;
+    width: 20vw;
+}
+
+.grid .g2 div {
+    border: 2px solid white;
+    background: transparent;
+    margin: 1.2rem 5rem;
+    height: auto;
+    max-width: 20vw;
+    padding: auto;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: 500;
+    box-shadow: 2px 1px 4rem #3a7a9d;
+    cursor: pointer;
+
+}
